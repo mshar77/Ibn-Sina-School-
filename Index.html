@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة ابن سينا المتوسطة - نماذج الاختبارات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="school-logo">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- كتاب مفتوح -->
+                        <circle cx="100" cy="60" r="30" fill="#0891b2"/>
+                        <path d="M 70 90 Q 70 120 100 140 Q 130 120 130 90" fill="#06b6d4" stroke="#0891b2" stroke-width="2"/>
+                        <path d="M 100 90 L 100 140" stroke="#0891b2" stroke-width="2"/>
+                        <rect x="75" y="95" width="20" height="30" fill="#0891b2" opacity="0.3"/>
+                        <rect x="105" y="95" width="20" height="30" fill="#0891b2" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="school-info">
+                    <h1>مدرسة ابن سينا</h1>
+                    <p>المتوسطة</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-subject="all">جميع المواد</button>
+                <button class="nav-btn" data-subject="math">رياضيات</button>
+                <button class="nav-btn" data-subject="science">علوم</button>
+                <button class="nav-btn" data-subject="arabic">لغتي</button>
+                <button class="nav-btn" data-subject="english">إنجليزي</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>نماذج اختبارات الفصل الدراسي الثاني</h2>
+            <p>للصف الثالث المتوسط - اختبر نفسك وتحضر للاختبارات النهائية</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Exams Grid -->
+        <section class="exams-section">
+            <div class="exams-grid" id="examsGrid">
+                <!-- سيتم ملء هذا القسم بواسطة JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Exam Details -->
+    <div class="modal" id="examModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <span class="modal-subject" id="modalSubject"></span>
+            </div>
+            <div class="modal-body">
+                <div class="exam-details">
+                    <div class="exam-info">
+                        <h4>معلومات النموذج:</h4>
+                        <p id="modalInfo"></p>
+                    </div>
+                    <div class="exam-questions">
+                        <h4>الأسئلة والإجابات:</h4>
+                        <div id="questionsContainer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="downloadBtn">تحميل النموذج</button>
+                <button class="btn btn-secondary" id="printBtn">طباعة</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 مدرسة ابن سينا المتوسطة</p>
+            <p>إعداد: <strong>مشاري</strong></p>
+            <p class="footer-note">موقع تعليمي لطلاب الصف الثالث المتوسط</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<html/>
